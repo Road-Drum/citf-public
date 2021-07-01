@@ -10,6 +10,6 @@ states = ['Johor','Kedah','Kelantan','Melaka',
 
 for state in states:
  filtered = data[data.state.str.contains(state)]
- filtered.to_csv(state+".csv")
+ filtered.to_csv(state+".csv",index=False)
 
 
